@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.color-h {
+  color: #cb3384;
+}
+.color-code {
+  background-color: #1e1e1e;
+}
+.color-exsampel {
+  background-color: #2f2f2f;
+  width: fit-content;
+  color: white;
+}
+.color-let {
+  color: #2c7ad6;
+}
+.container-array {
+  background-color: #eaeaea;
+}
+.color-console {
+  color: #e42c2c;
+}
+p {
+  color: #686868;
+}
+
+.color-comint {
+  color: #7d7d7d;
+}
+
+.fonts {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+}
+.bg-con {
+  background-color: white;
+}
+.navg {
+  background-color: #d7d7d7;
+  text-transform: capitalize;
+}

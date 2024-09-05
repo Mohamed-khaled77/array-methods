@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="./stayle.css" />
+    <title>array methodes</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row g-0 justify-content-center color-row">
+        <div class="col-sm-12 col-md-10 p-2 pb-0">
+          <div class="d-flex w-100">
+            <h2
+              class="text-center fw-bold fonts navg m-0 p-2 rounded-top w-100">
+              array methods
+            </h2>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2 pt-0">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2 class="fonts">1.toString<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                هي طريقة تستخدم لتحويل قيمة الى سلسة نصية مع انواع البيانات
+                الاساسية مثل الارقام ,والمصفوفات,والكائنات
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">no =</span> 536;<br />
+                  <span class="color-let">let</span>
+                  <span class="text-light">nos =</span> no.<span
+                    class="color-let"
+                    >stoString</span
+                  >
+                  ();<br />
+                  console. <span class="color-console">log</span>(<span
+                    class="text-light"
+                    >nos</span
+                  >); <span class="color-comint"> // "536"</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2 class="fonts">2.join<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                (string) واحدة، حيث يتم فصل العناصر باستخدام محدد (separator)
+                تحدده أنت. هي دالة تُستخدم لتحويل جميع عناصر المصفوفة إلى سلسلة
+                نصية
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">fruits =</span> ["Apple", "Banana",
+                  "Cherry"];<br />
+                  <span class="color-let">let</span>
+                  <span class="text-light">fur=</span>
+                  <span class="color-let">fruits.join</span>();<br />
+                  console. <span class="color-console">log</span>(<span
+                    class="text-light"
+                    >fur</span
+                  >);
+                  <span class="color-comint"> // "Apple,Banana,Cherry"</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2 class="fonts">3.pop<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                هي دالة تُستخدم لإزالة العنصر الأخير من مصفوفة وإرجاعه. تُغير
+                المصفوفة الأصلية، حيث تقلل طولها بمقدار عنصر واحد
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">fruits =</span> ["Apple", "Banana",
+                  "Cherry"];s<br />
+                  <span class="color-let">lastFruit</span>
+                  <span class="text-light">lastFruit =</span>
+                  <span class="color-let">fruits.pop</span> ();<br />
+                  console. <span class="color-console">log</span>(<span
+                    class="text-light"
+                    >lastFruit</span
+                  >);
+                  <span class="color-comint"> // "Apple,Banana,Cherry"</span>
+                  <br />
+                  console. <span class="color-console">log</span>(<span
+                    class="text-light"
+                    >fruits</span
+                  >);
+                  <span class="color-comint"> // "Apple,Banana,Cherry"</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2 class="fonts">4.push<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                هي دالة تُستخدم لإضافة عنصر أو أكثر إلى نهاية المصفوفة تقوم
+                بتعديل المصفوفة الأصلية من خلال زيادة طولها بمقدار العناصر
+                المضافة، وتُرجع الطول الجديد للمصفوفة.
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">fruits =</span> ['Apple',
+                  'Banana'];<br />
+                  <span class="color-let">let</span>
+                  <span class="text-light">newLength =</span>fruits.<span
+                    class="color-let"
+                    >push</span
+                  >('Cherry');<br />
+                  console. <span class="color-console">log</span>(<span
+                    class="text-light"
+                    >fruits</span
+                  >);
+                  <span class="color-comint"> // "Apple,Banana,Cherry"</span>
+                  <br />
+                  console. <span class="color-console">log</span>(<span
+                    class="text-light"
+                    >newLength</span
+                  >);
+                  <span class="color-comint"> // "Apple,Banana,Cherry"</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>5.shift<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                هي دالة تُستخدم لإزالة العنصر الأول من المصفوفة وإرجاعه. تقوم
+                هذه لدالة بتعديل المصفوفة الأصلية عن طريق تقليل طولها بمقدار
+                عنصر واحد، كما يتم نقل العناصر المتبقية إلى اليسار (أو إلى بداية
+                المصفوفة) لملء الفراغ الذي تركه العنصر المُزال
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">fruits =</span> ['Apple', 'Banana',
+                  'Cherry'];<br />
+                  <span class="color-let">let</span>
+                  <span class="text-light">firstFruit =</span> fruits.<span
+                    class="color-let"
+                    >shift</span
+                  >
+                  ();<br />
+                  console. <span class="color-console">log</span>(<span
+                    class="text-light"
+                    >firstFruit</span
+                  >);
+                  <span class="color-comint"> // "Apple,Banana,Cherry"</span>
+                  <br />
+                  console. <span class="color-console">log</span>(<span
+                    class="text-light"
+                    >fruits</span
+                  >);
+                  <span class="color-comint"> // "Apple,Banana,Cherry"</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>6.unshift<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                هي دالة تُستخدم لإضافة عنصر أو أكثر إلى بداية المصفوفة. هذه
+                الدالة تُغير المصفوفة الأصلية عن طريق زيادة طولها بمقدار العناصر
+                المضافة، وتُرجع الطول الجديد للمصفوفة
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">fruits =</span> ['Banana',
+                  'Cherry'];<br />
+                  <span class="color-let">let</span>
+                  <span class="text-light">nos =</span> fruits.<span
+                    class="color-let"
+                    >unshift</span
+                  >
+                  ();<br />
+                  console. <span class="color-console">log</span>(<span
+                    class="text-light"
+                    >fruits</span
+                  >);
+                  <span class="color-comint"> // "Apple,Banana,Cherry"</span>
+                  <br />
+                  console. <span class="color-console">log</span>(<span
+                    class="text-light"
+                    >newLength</span
+                  >);
+                  <span class="color-comint"> // "Apple,Banana,Cherry"</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>7.delet<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                نقوم بستخدامها لحذف عنصر من مصفوفة ولاكن هي لا تقوم بالحذف هيا
+                تقوم بالازالة وتترك مساحة فارغة ولا تقوم بترتيب العناصر ويبقا
+                طول المصفوفة كما هوا ويصبح ذالك الجزء الفراغ من لبمصوصفة تكون
+                قيمة <br />(undefined)
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">fruits =</span> ["apple", "banana",
+                  "cherry"];<br />
+                  <span class="color-let">delete</span>
+                  <span class="text-light">fruits </span>
+                  <span class="color-let">[1];</span> <br />
+                  console. <span class="color-console">log</span>(<span
+                    class="text-light"
+                    >fruits</span
+                  >);
+                  <span class="color-comint">
+                    // ["apple", empty, "cherry"]</span
+                  >
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>8.concat<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                وهي دالة تُستخدم لدمج مصفوفتين أو أكثر أو لإضافة عناصر جديدة إلى
+                مصفوفة موجودة دون تغيير المصفوفات الأصلية. concat() تُرجع مصفوفة
+                جديدة تحتوي على العناصر المدمجة.
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">fruits =</span> ["apple",
+                  "banana"];<br />
+                  <span class="color-let">let</span>
+                  <span class="text-light">combinedFruits =</span> fruits.<span
+                    class="color-let"
+                    >concat</span
+                  >("cherry", "date");<br />
+                  console. <span class="color-console">log</span>(<span
+                    class="text-light"
+                    >combinedFruits</span
+                  >);
+                  <span class="color-comint">
+                    // ["apple", "banana", "cherry", "date"]</span
+                  >
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>9.sort<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                هي دالة تستخدم لفرز وترتيب عناصر المصفوفة بشكل افتراضي تقوم
+                بترتيب العناصرر كقيم نصية ابجديا وفي ترتيب تصاعدي وذا احتاجنا
+                تغير الترتيب بشكل مخصص يجب تمرير دالة مقارنة
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">fruits =</span> ["banana", "apple",
+                  "cherry"];<br />
+                  <span class="text-light">nos =</span> fruits.<span
+                    class="color-let"
+                    >sort</span
+                  >
+                  ();<br />
+                  console. <span class="color-console">log</span>(<span
+                    class="text-light"
+                    >fruits</span
+                  >);
+                  <span class="color-comint">
+                    // ["apple", "banana", "cherry"]</span
+                  >
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>10.splice<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                هي دالة تقوم بتعديل المصفوفة الاصلية مباشرة وتعيد مصفوفة جديدة
+                يتم بها حذف او استبدال العناصر
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">fruits =</span> ["apple", "banana",
+                  "date"];<br />
+                  <span class="text-light">fruits.</span
+                  ><span class="color-let">splice</span> (2, 0, "cherry");<br />
+                  console. <span class="color-console">log</span>(<span
+                    class="text-light"
+                    >fruits</span
+                  >);
+                  <span class="color-comint"
+                    >// ["apple", "banana", "cherry", "date"]</span
+                  >
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>11.slice<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                دالة تستخدم لاستخراج جزء من مصفوفة او سلسلة نصية بدون تعديل في
+                المصفوفة او السلسلة الاصلية وتقوم بارجاع مصفوفة جديدة تحتوي على
+                العناصر المستخرجة
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">fruits =</span> ["apple", "banana",
+                  "cherry", "date", "elderberry"];<br />
+                  <span class="color-let">let</span>
+                  <span class="text-light">slicedFruits =</span> fruits.<span
+                    class="color-let"
+                    >slice</span
+                  >(1, 3);<br />
+                  console.<span class="color-console">log</span>(<span
+                    class="text-light"
+                    >slicedFruits</span
+                  >);
+                  <span class="color-comint">// ["banana", "cherry"]</span>
+                  <br />
+                  console.<span class="color-console">log</span>(<span
+                    class="text-light"
+                    >fruits</span
+                  >);
+                  <span class="color-comint">
+                    // ["apple", "banana", "cherry", "date", "elderberry"]</span
+                  >
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>12.reverse<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                هي دالة تقوم بعكس ترتيب العناصر دخل المصفوفة نفسها ولا تقوم
+                بأنشاء مصفوفة جديدة
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">numbers =</span> [1, 2, 3, 4, 5];<br />
+                  <span class="text-light">numbers.</span
+                  ><span class="color-let">reverse</span>();<br />
+                  console. <span class="color-console">log</span>(<span
+                    class="text-light"
+                    >numbers</span
+                  >);
+                  <span class="color-comint"> // [5, 4, 3, 2, 1]</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>13.Array.isArray<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                دالة تستخدم للتحقق مما اذا كانت القيمة المدخلة عبارة عن مصفوفة
+                ام لا
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">numbers =</span> [1, 2, 3, 4];<br />
+                  console.<span class="color-console">log</span>(<span
+                    class="text-light"
+                    >Array.isArray(numbers)</span
+                  >);
+                  <span class="color-comint"> // true</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>14.indexof<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                ستخدم للعثور على الفهرس الأول لعنصر معين داخل المصفوفة أو
+                السلسلة النصية. إذا تم العثور على العنصر، تُرجع الدالة فهرسه
+                (الذي يبدأ من 0). إذا لم يتم العثور على العنصر، تُرجع -1.
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">fruits =</span> ["apple", "banana",
+                  "cherry", "apple"];<br />
+                  <span class="color-let">let</span>
+                  <span class="text-light">index =</span>fruits.<span
+                    class="color-let"
+                    >indexOf</span
+                  >("banana");<br />
+                  console.<span class="color-console">log</span>(<span
+                    class="text-light"
+                    >index</span
+                  >);
+                  <span class="color-comint">// 1</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>15.lastindexof<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                دالة تقوم بالبحث عن الفهرس ولاكن من نهاية المصوفة وتقوم بارجاع
+                العنصر الاخير الذي تم البحث عنه واذا لم تجدة ترجع -1
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light"> fruits = </span> ["apple", "banana",
+                  "cherry", "apple"];<br />
+                  <span class="color-let">let</span>
+                  <span class="text-light">index =</span> fruits.<span
+                    class="color-let"
+                    >lastIndexOf</span
+                  >("apple");<br />
+                  console.<span class="color-console">log</span>(<span
+                    class="text-light"
+                    >index</span
+                  >);
+                  <span class="color-comint"> // 3"</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>16.find<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                دالة تستخدم للعثور على اول عنصر في المصفوفة يطابق شرطا معينا يتم
+                تحدية بواسطة دالة اختبار بمجرد العصور على العنصر تقوم الدالة
+                بارجاعة اما اذا لم يتم العثور علية ترجع undefined
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">numbers =</span> [10, 20, 30, 40,
+                  50];<br />
+                  <span class="color-let">let</span>
+                  <span class="text-light">result =</span> numbers.<span
+                    class="color-let"
+                    >find</span
+                  >(element => element > 25);<br />
+                  console.<span class="color-console">log</span>(<span
+                    class="text-light"
+                    >result</span
+                  >);
+                  <span class="color-comint">// 30</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>17.findindex<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                دالة تستخدم للعثور على الفهرس الاول في المصفوفة يطابق شرطا معينا
+                يتم تحديده بواسطة دالة اختبار اذا تم العثور علية تقوم بارجاعة
+                واذا لم تجدة ترجع -1
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">numbers =</span> [10, 20, 30, 40,
+                  50];<br />
+                  <span class="color-let">let</span>
+                  <span class="text-light">result =</span> numbers.<span
+                    class="color-let"
+                    >findIndex</span
+                  >(element => element > 25);<br />
+                  console.<span class="color-console">log</span>(<span
+                    class="text-light"
+                    >result</span
+                  >);
+                  <span class="color-comint">// 2</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>18.includes<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                تُستخدم للتحقق مما إذا كانت المصفوفة أو السلسلة النصية تحتوي على
+                قيمة معينة. إذا تم العثور على القيمة، تُرجع ترو وإذا لم يتم
+                العثور عليها، تُرجع فولس
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">fruits =</span>["apple", "banana",
+                  "cherry"];<br />
+                  <span class="color-let">let</span>
+                  <span class="text-light">result =</span> fruits.<span
+                    class="color-let"
+                    >includes</span
+                  >("banana");<br />
+                  console.<span class="color-console">log</span>(<span
+                    class="text-light"
+                    >result</span
+                  >);
+                  <span class="color-comint">// true</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>19.entries<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                دالة تستخدم للحصول على كائن يحتوي على ازواج القيمة و الفهرس من
+                المصفوفة ويستخدم داله حلقات تكرار
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">fruits =</span> ["apple", "banana",
+                  "cherry"];<br />
+                  <span class="color-let">for</span>
+                  <span class="text-light"
+                    >(let [index, value] of fruits.entries()) </span
+                  >{ console.<span class="color-console">log</span>(<span
+                    class="text-light"
+                    >index, value</span
+                  >);}
+                  <span class="color-comint">
+                    // 0 "apple"<br />
+                    1 "banana" <br />
+                    2 "cherry"
+                  </span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>20.every<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                دالة تستخدم لاختبار ما اذا كانت جميع العناصر في المصفوفة تطابق
+                شرطا معينا يحدده المستخدم في دالة اختبار اذا كان الشرط ينطبق على
+                جميع العناصر تقوم بارجاع ترو واذا وجد عنصر واحد لا ينطبق علية
+                الشرط ترجع فولس
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light"> numbers =</span> [10, 20, 30,
+                  40];<br />
+                  <span class="color-let">let</span>
+                  <span class="text-light">allGreaterThan5 = </span>
+                  numbers.<span class="color-let">every</span>(num => num >
+                  5);<br />
+                  console.<span class="color-console">log</span>(<span
+                    class="text-light"
+                    >allGreaterThan5</span
+                  >);
+                  <span class="color-comint"> // true</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>21.some<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                دالة تستخدم لاختبار ما اذا كان اي عنصر في المصفوفة يطابق شرطا
+                ادخلة المستخدم في دالة اختبار اذا كان هناك اي عنصر يطابق الشرط
+                ترجع ترو واذا لم يوجد ترجع فولس
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">numbers =</span> [10, 20, 30, 40];<br />
+                  <span class="color-let">let</span>
+                  <span class="text-light">hasGreaterThan25 =</span>
+                  numbers.<span class="color-let">some</span>(num => num >
+                  25);<br />
+                  console.<span class="color-console">log</span>(<span
+                    class="text-light"
+                    >hasGreaterThan25</span
+                  >);
+                  <span class="color-comint">// true</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>22.fill<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                دالة تُستخدم لملء جميع عناصر المصفوفة بقيمة ثابتة، بدءًا من فهرس
+                محدد (اختياري) إلى فهرس نهائي (اختياري). هذه الدالة تعدل
+                المصفوفة الأصلية
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">numbers =</span> [1, 2, 3, 4, 5];<br />
+                  <span class="text-light">numbers.<span class="color-let">fill</span>(0);<br />
+                  console.<span class="color-console">log</span>(<span
+                    class="text-light"
+                    >numbers</span
+                  >);
+                  <span class="color-comint"> // [0, 0, 0, 0, 0]</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2"> 
+            <div class="title-array">
+              <h2>23.copywithin<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                 دالة  تُستخدم لنسخ جزء من المصفوفة إلى موقع آخر داخل نفس المصفوفة دون تغيير حجمها. يتم النسخ على مستوى المصفوفة الأصلية، أي أن الدالة تعدل المصفوفة الأصلية.
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">arr =</span> [1, 2, 3, 4, 5];<br />
+                  <span class="text-light"></span> arr.<span class="color-let">copyWithin</span>(0, 3);<br />
+                  console.<span class="color-console">log</span>(<span
+                    class="text-light"
+                    >arr</span
+                  >);
+                  <span class="color-comint">// [4, 5, 3, 4, 5]</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>24.valueof<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                دالة تستخدم في ارجاع القيمةالاولية البدائية لكائن هذه الدالة وهي مفيدة لاسترداد القيمة الفعلية المخزنة في هذه الكائنات 
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">arr =</span>[1, 2, 3];<br />
+                  <span class="color-let">let</span>
+                  <span class="text-light">value =</span>arr.<span class="color-let">valueOf</span>();<br />
+                  console.<span class="color-console">log</span>(<span
+                    class="text-light"
+                    >value</span
+                  >);
+                  <span class="color-comint"> // [1, 2, 3]</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>25.foreach<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                دالة تستخدم لتكرار العناصر الموجودة في مصفوفة تقوم هذه لبدالة يتفيذ وصيفة تحددها لكل عنصر من المصفوفة ولا ترجع اي قيمة فهي فقط تقوم بتطبيق الوظيفة على كل عنصر 
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">array =</span>[1, 2, 3, 4];<br />
+                  <span class="text-light">array.</span><span class="color-let">forEach</span>(function(element){<br />
+                  console.<span class="color-console">log</span>(<span
+                    class="text-light"
+                    >element</span
+                  >);<br>
+                  })
+                  <span class="color-comint"> // 1 , 2 , 3 , 4</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>26.map<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+               دالة تستخدم لانشاء مصفوفة جديدة تحتوي على نتائج تطبيق دالة معينة على كل عنصر من عناصر المصفوفة الاصلية تعتبر مفيدة عندما تحتاج الى تحويل كل عنصر في المصفوفة الي قيمة جديدة بناء عملية معينة  وتقوم بارجاع مصفوفة جديدة ولا تقوم بتعديل المصفوفة الاصلية 
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">numbers =</span>[1, 2, 3, 4];<br />
+                  <span class="color-let">let</span>
+                  <span class="text-light">squaredNumbers =</span> numbers.
+                  <span class="color-let">map</span>(function(number) {<br />
+                      return number * number;
+                  })
+                  console. <span class="color-console">log</span>(<span
+                    class="text-light"
+                    >squaredNumbers</span
+                  >);
+                  <span class="color-comint"> // [1, 4, 9, 16]</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>27.filter<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                 دالة تستخدم لانشاء مصفوفة جديدة تحتوي على العناصر التي تحقق شرطا معينا تقوم به دالة اختبار على كل عنصر من عناصر المصفوفة الاصلية وتحتفظ فقط بالعناصر التي تعود بقين=مة ترو ترجع  مصفوفة جديدة تحتوي على العناصر التي استوفت شرط الاختبار، ولا تُعدل المصفوفة الأصلية.
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">numbers=</span> [1, 2, 3, 4, 5, 6];<br />
+                  <span class="color-let">let</span><span class="text-light">evenNumbers =</span> numbers.
+                  <span class="color-let">filter</span>(function(number){<br />
+                        return number % 2 === 0;
+                  })
+                  console.<span class="color-console">log</span>(<span
+                    class="text-light"
+                    >evenNumbers</span
+                  >);
+                  <span class="color-comint"> // [2, 4, 6]</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>28.reduce<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                دالة تستخدم لتطبيق عملية جمع داخل دالة وتقوم بجمع كل عنصر في المصفوفة وتقوم بارجاع النتيجة فقط  
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">numbers = </span>[1, 2, 3, 4];<br />
+                  <span class="color-let">let</span>
+                  <span class="text-light">sum = </span>numbers.<span class="color-let">reduce</span>(function(accumulator, currentValue){<br />
+                        return accumulator + currentValue;
+                  },0);
+                  console.<span class="color-console">log</span>(<span
+                    class="text-light"
+                    >sum</span
+                  >);
+                  <span class="color-comint">// 10</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>29.reduceright<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                دالة تقوم بجمع عنتصر المصفوفة ولاكن تقوم بالعملية من اليمين الى الياسار ويقووم بتطبيق التجميع على كل عنصر في المصفوفة 
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">numbers =</span>[1, 2, 3, 4];<br />
+                  <span class="color-let">let</span>
+                  <span class="text-light">result = </span> numbers.<span class="color-let">reduceRight</span>(function(accumulator, currentValue){<br />
+                      return accumulator - currentValue;
+                      }, 0);
+                  console.<span class="color-console">log</span>(<span
+                    class="text-light"
+                    >result</span
+                  >);
+                  <span class="color-comint"> // -4</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-10 p-2">
+          <div class="container-array p-2">
+            <div class="title-array">
+              <h2>30.from<span class="color-h">( )</span></h2>
+              <p class="fs-5 text-end p-2 fw-bold">
+                دالة تستحدم لانشاء مصفوفة جديدة من كائن قابل للتكرار مثل سلسلة النصوص او كائن شبية بالمصفوفة 
+              </p>
+            </div>
+            <div>
+              <h4 class="color-exsampel p-2 rounded-top my-0">exsampel</h4>
+              <div
+                class="code-array color-code p-3 rounded-bottom-1 rounded-end-2">
+                <code class="fs-3 w-100">
+                  <span class="color-let"> let</span>
+                  <span class="text-light">str =</span> 'hello'<br />
+                  <span class="color-let">let</span>
+                  <span class="text-light">chars = </span>Array.<span class="color-let">from</span>(str);<br />
+                  console.<span class="color-console">log</span>(<span
+                    class="text-light"
+                    >chars</span
+                  >);
+                  <span class="color-comint">// ['h', 'e', 'l', 'l', 'o']</span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./hidex.js"></script>
+  </body>
+</html>
